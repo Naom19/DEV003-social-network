@@ -1,7 +1,8 @@
 import {
-  signOff, saveTask, getTask, obtenerPost,
+  signOff, saveTask, getTask, obtenerPost, savePost, updatePost,
+  getPost,
 } from '../lib';
-import { auth } from '../lib/firebase';
+import { auth, db } from '../lib/firebase';
 // eslint-disable-next-line no-unused-vars
 export const feed = (onNavigate) => {
 // ========Creamos los elementos de nuestro feed===========
@@ -18,7 +19,7 @@ export const feed = (onNavigate) => {
   const postText = document.createElement('textarea');
   const botonGuardar = document.createElement('button');
   const btnLogOut = document.createElement('button');
-
+  // const postHeader = document.createElement('div'); postHeader.classList.add('postHeader');
   // =====Escribimos la info dentro de los elementos=====
   postTitle.type = 'text';
   headerPost.textContent = 'Bienvenida a tu muro';
@@ -63,30 +64,15 @@ export const feed = (onNavigate) => {
   });
 
   getTask().then(() => {
-// console.log('hola muro');
-  });
 
+    // console.log('hola muro');
+  });
+  let editStatus = false;
+  let id = '';
   obtenerPost((querySnapshot) => {
-    // let html = '';
+    feedContainer.innerHTML = '';
     querySnapshot.forEach((doc) => {
       const post = doc.data();
-        /*html += `
-        <div class= 'postIndividual'>
-          <div class='postHeader'>
-            <img src='img/user-circle-regular-24.png'>
-            <h5>Nombre de usuario</h5>
-          </div>
-          <p class='postTitle'>${post.title}</p>
-          <p class='description-text'>${post.description}</p>
-          <div class='postFooter'>
-            <button class='likeBtn'>
-              <img src='img/heart-regular-24.png'>
-              <img src='img/heart-solid-24.png'>
-            </button>
-          </div>
-        </div>
-        `; */
-// En lugar de escribirlo en HTML lo escribimos como elementos para manipularlos
       const postIndividual = document.createElement('div');
       postIndividual.classList.add('postIndividual');
 
@@ -94,12 +80,6 @@ export const feed = (onNavigate) => {
       // agregando una clase al elemento
       postHeader.classList.add('postHeader');
       // Aquí checamos si hay autor
-      if (post.author !== null && post.author !== undefined) {
-        postHeader.innerHTML += `<img src='img/user-circle-regular-24.png'><h5>${post.author}</h5>`;
-      } else {
-        // nuevo HTML que estamos creando += agrega la info que va a leer como HTML
-        postHeader.innerHTML += "<img src='img/user-circle-regular-24.png'><h5>Invitado</h5>";
-      }
 
       const postTitle2 = document.createElement('p');
       postTitle2.classList.add('postTitle');
@@ -113,13 +93,22 @@ export const feed = (onNavigate) => {
       postFooter.classList.add('postFooter');
 
       const likeBtn = document.createElement('button');
+      const editBtn = document.createElement('button');
+      editBtn.textContent = 'Editar';
+      editBtn.classList.add('btnEdit');
       likeBtn.classList.add('likeBtn');
       likeBtn.innerHTML += "<img src='img/heart-regular-24.png'><img src='img/heart-solid-24.png'>";
-
-      postFooter.append(likeBtn);
+      if (post.author !== null && post.author !== undefined) {
+        postHeader.innerHTML += `<img src='img/user-circle-regular-24.png'><h5>${post.author}</h5>`;
+      } else {
+        // nuevo HTML que estamos creando += agrega la info que va a leer como HTML
+        postHeader.innerHTML += "<img src='img/user-circle-regular-24.png'><h5>Invitado</h5>";
+      }
+      // En lugar de escribirlo en HTML lo escribimos como elementos para manipularlos
+      postFooter.append(likeBtn, editBtn);
       postIndividual.append(postHeader, postTitle2, postDescription, postFooter);
       feedContainer.append(postIndividual);
-// detectamos si el boton está prendido o está apagado
+      // detectamos si el boton está prendido o está apagado
       likeBtn.addEventListener('click', (event) => {
         // el objeto al que le damos click
         const boton = event.target.parentElement;
@@ -132,10 +121,70 @@ export const feed = (onNavigate) => {
           boton.classList.add('active');
         }
       });
-      //console.log(post);
+
+      editBtn.addEventListener('click', async (event) => {
+        // se escucha el evento y se trae la publicación con id
+        // const document = await getPost(doc.id);
+        // const postToEdit = document.data();
+        // traemos texto del post para editar y actualizar
+        postTitle.value = post.title;
+        postText.value = post.description;
+        editStatus = true;
+        id = doc.id;
+        botonGuardar.textContent = 'Publicar';
+      });
+
+      /* html += `
+        <div class= 'postIndividual'>
+          <p>${post.title}</p>
+          <p class='description-text'>${post.description}</p>
+          <button class='btnEdit' data-id='${doc.id}'>Editar</button>
+        </div>
+        `;
+        */
     });
     // feedContainer.innerHTML = html;
-    //console.log(feedContainer);
+    const editBtns = feedContainer.querySelectorAll('.btnEdit');
+    console.log(editBtns.length);
+    /* editBtns.forEach((btn) => {
+      console.log('eventListener boton');
+      btn.addEventListener('click', async (e) => {
+        // se escucha el evento y se trae la publicación con id
+        console.log(e.target.dataset.id)
+        const doc = await getPost(e.target.dataset.id);
+        const post = doc.data();
+        // traemos texto del post para editar y actualizar
+        postTitle.value = post.title;
+        postText.value = post.description;
+        editStatus = true;
+        id = doc.id;
+        botonGuardar.textContent = 'Publicar';
+      });
+    }); */
+    console.log(feedContainer);
+    // console.log(post);
+  });
+  // feedContainer.innerHTML = html;
+  // console.log(feedContainer);
+
+  taskForm.addEventListener('submit', (e) => {
+    e.preventDefault();
+    // definimos que en caso de que el input esté vacío no se ejecute la función
+    if (taskForm.value !== '') {
+      if (!editStatus) {
+        savePost(taskForm.value);
+      } else {
+        // actualización
+        updatePost(id, {
+          title: postTitle.value,
+          description: postText.value,
+        });
+        editStatus = false;
+        id = '';
+      }
+      taskForm.reset();
+      botonGuardar.textContent = 'Guardar';
+    }
   });
 
   btnLogOut.addEventListener('click', () => {
