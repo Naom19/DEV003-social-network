@@ -16,7 +16,6 @@ body {
 .titulo {
     font-size: 3.4rem;
     font-family: 'Rasa', serif;
-    display: flex;
     justify-content: center;
     align-self: center;
     margin-top: 2rem;
@@ -25,7 +24,6 @@ body {
 .subtitulo {
     font-family: 'Rasa', serif;
     font-size: 1.3rem;
-    display: flex;
     justify-content: center;
     align-self: center;
     text-align: center;
@@ -40,7 +38,6 @@ body {
 
 .inputs {
     background: rgb(253, 253, 253);
-    display: flex;
     justify-content: center;
     align-items: center;
     width: 12rem;
@@ -56,13 +53,11 @@ body {
 
 .botones {
     background: rgb(81, 36, 86);
-    display: flex;
     justify-content: center;
     align-items: center;
     width: 12rem;
     height: 3rem;
     border-radius: 10px;
-    /*border: 1%;*/
     margin: 1rem 3rem 2rem;
     font-family: 'Anton', sans-serif;
     color: white;
@@ -90,7 +85,7 @@ body {
     display: none;
 }
 .imgContainer {
-    display: none   !important;
+    display: none;
 }
 /* estilo de boton google*/
 .googleIcon{
@@ -107,9 +102,8 @@ body {
     align-self: center;
     margin: 0rem 2rem 1rem;
 }
-     /* style del feed */    
+     /* estilo del feed */    
      /* #feedContainer {
-        display: flex;
         justify-content: center;
         align-items: column;
         flex-direction: column;
@@ -211,8 +205,8 @@ body {
         
     }
     .homeContainer{
-       margin: 50px;
-       padding: 50px;
+       margin: 10px;
+       padding: 25px;
        flex-direction: column;
        display: flex;
 
@@ -455,9 +449,8 @@ body {
     background-size: cover;
 }
 
-/*tabletas (768px), */
 
-/**********************************************Código del FEED***********************************************/
+/* --------------------------Código del FEED---------------------------------*/
 .divPadre {
     border: 1rem;
     border-color: black;

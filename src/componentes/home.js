@@ -7,6 +7,7 @@ export const home = (onNavigate) => {
   const imgContainer = document.createElement('div');
   const deskContainer = document.createElement('div');
   const container = document.createElement('div');
+  const boxLogIn = document.createElement('div');
   // se crea div para insertar imagen del boton google
   const googleimg = document.createElement('div');
   const title = document.createElement('h2');
@@ -27,6 +28,7 @@ export const home = (onNavigate) => {
   logInEmailErr.classList.add('errors', 'hide');
   logInGeneralErr.classList.add('errors', 'hide');
   // se asigna clase para dar estilo al div para el boton de google
+  boxLogIn.classListv = 'boxLogInputs';
   googleimg.classList = 'googleIcon';
   logInGoogle.id = 'btnlogInGoogle';
   title.className = 'titulo';
