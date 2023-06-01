@@ -3,7 +3,7 @@ import {
   deletePost,
   // getPost,
 } from '../lib';
-import { auth, db } from '../lib/firebase';
+import { auth } from '../lib/firebase';
 // eslint-disable-next-line no-unused-vars
 export const feed = (onNavigate) => {
 // ========Creamos los elementos de nuestro feed===========

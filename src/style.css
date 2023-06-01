@@ -9,8 +9,9 @@
 body {
     display: flex;
     justify-content: center;
-    background-color: rgb(251, 250, 205); 
-    color: rgb(144, 94, 150);
+    height: 100%;
+    width: 100%;
+    background-image: linear-gradient(to bottom, #880e4f, #8b275f, #8d396e, #8e497c, #8f5788, #8a5a87, #855d86, #805f84, #735877, #675169, #5b4a5d, #4f4350);
 }
 
 .titulo {
@@ -40,9 +41,6 @@ body {
 
 .inputs {
     background: rgb(253, 253, 253);
-    display: flex;
-    justify-content: center;
-    align-items: center;
     width: 12rem;
     height: 2rem;
     border-radius: 10px;
@@ -248,10 +246,7 @@ body {
         align-items:center;
         text-align: center;
     }
-     body {
-        background-color: rgb(251, 250, 205);
-        color: rgb(144, 94, 150);
-    } 
+
     .headerPost{
         font-family: 'Rasa', serif;
         font-size: 25px;
