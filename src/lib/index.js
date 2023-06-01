@@ -45,8 +45,6 @@ export function getUser(user) {
 export const saveTask = (title, description, author) => addDoc(collection(db, 'task'), { title, description, author });
 
 export const getTask = async () => {
-  
-
   const q = query(collection(db, 'task'));
 
   const querySnapshot = await getDocs(q);
