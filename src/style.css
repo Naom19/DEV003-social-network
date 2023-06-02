@@ -1,72 +1,69 @@
 @import url('https://fonts.googleapis.com/css2?family=Rasa:wght@300&display=swap');
 
-@media (max-width:600px) {
+@media (max-width:37.500em) {
     * {
         padding: 0;
         margin: 0;
         box-sizing: border-box;
     }
 body {
+    min-height: 100vh;
+    width: 100%;
     display: flex;
     justify-content: center;
-    background-color: rgb(251, 250, 205); 
-    color: rgb(144, 94, 150);
+    /* color: rgb(144, 94, 150); */
+    background-image: linear-gradient(to bottom, #880e4f, #8b275f, #8d396e, #8e497c, #8f5788, #8a5a87, #855d86, #805f84, #735877, #675169, #5b4a5d, #4f4350);
 }
 
 .titulo {
-    font-size: 3.4rem;
+    font-size: 3.4em;
     font-family: 'Rasa', serif;
-    display: flex;
     justify-content: center;
     align-self: center;
-    margin-top: 2rem;
+    margin-top: 2em;
 }
 
 .subtitulo {
     font-family: 'Rasa', serif;
-    font-size: 1.3rem;
-    display: flex;
+    font-size: 1.3em;
     justify-content: center;
     align-self: center;
     text-align: center;
-    margin-bottom: 2rem;
+    margin-bottom: 2em;
 }
 
 .logInContainer {
     background-color: white;
-    height: 10rem;
-    width: 5rem;
+    height: 10em;
+    width: 5em;
 }
 
 .inputs {
     background: rgb(253, 253, 253);
-    display: flex;
     justify-content: center;
     align-items: center;
-    width: 12rem;
-    height: 2rem;
-    border-radius: 10px;
+    width: 12em;
+    height: 2em;
+    border-radius: 0.62em;
     border: none;
-    margin: 1rem 3rem 1rem;
+    margin: 1em 3em 1em;
     font-family: 'Anton', sans-serif;
     text-align: center;
     color: rgb(81, 36, 86);
-    font-size: 1rem;
+    font-size: 1em;
 }
 
 .botones {
     background: rgb(81, 36, 86);
-    display: flex;
     justify-content: center;
     align-items: center;
-    width: 12rem;
-    height: 3rem;
-    border-radius: 10px;
-    /*border: 1%;*/
-    margin: 1rem 3rem 2rem;
+    width: 12em;
+    height: 3em;
+    border-radius: 0.62em;
+    margin: 1em 3em 2em;
     font-family: 'Anton', sans-serif;
     color: white;
-    font-size: 1rem;
+    font-size: 1em;
 
 }
 
@@ -79,18 +76,18 @@ body {
 .errors {
     /*estilo*/
     font-family: Arial, Helvetica, sans-serif;
-    size: 1rem;
+    size: 1em;
     color: red;
     justify-content: center;
     align-self: center;
-    margin: 0rem 4rem 0.5rem;
+    margin: 0em 4em 0.5em;
 }
 
 .hide {
     display: none;
 }
 .imgContainer {
-    display: none   !important;
+    display: none;
 }
 /* estilo de boton google*/
 .googleIcon{
@@ -100,20 +97,19 @@ body {
     background-position:center;
     /* mismo formato que botones del home*/
     background-size: contain;
-    width: 15rem;
-    height: 3rem;
-    border-radius: 10px;
+    width: 15em;
+    height: 3em;
+    border-radius: 0.62em;
     justify-content: center;
     align-self: center;
-    margin: 0rem 2rem 1rem;
+    margin: 0em 2em 1em;
 }
-     /* style del feed */    
+     /* estilo del feed */    
      /* #feedContainer {
-        display: flex;
         justify-content: center;
         align-items: column;
         flex-direction: column;
-        margin: 0.5rem 0.1rem 0.5rem;
+        margin: 0.5em 0.1em 0.5em;
     } */
 
     .postIndividual{
@@ -122,8 +118,8 @@ body {
         flex-direction: column;
         background-color: white;
         align-items: center;
-        margin: 1rem;
-        padding: 1rem;
+        margin: 1em;
+        padding: 1em;
     }
 
     .postHeader{
@@ -156,7 +152,7 @@ body {
         display: flex;
         justify-content: center;
         align-self: flex-start;
-        margin: 0.2rem;
+        margin: 0.2em;
     }
     
     #postTitle {
@@ -165,7 +161,7 @@ body {
         align-self: center;
         flex-direction: column;
         text-align: center;
-        margin: 1rem;
+        margin: 1em;
     }
 
     #taskForm {
@@ -173,7 +169,7 @@ body {
         justify-content: center;
         align-self: center;
         flex-direction: column;
-        margin: 1rem;
+        margin: 1em;
     }
     #postText {
         display: flex;
@@ -181,17 +177,17 @@ body {
         align-self: center;
         flex-direction: column;
         text-align: center;
-        margin: 0.2rem;
+        margin: 0.2em;
     }
     #botonGuardar {
         display: flex;
         justify-content: center;
         align-self: center;
-        margin: 0.2rem;
+        margin: 0.2em;
     }
 
 }
-@media (max-width: 1600px) and (min-width: 601px){
+@media (max-width: 100em) and (min-width: 37.563em){
     * {
         padding: 0;
         margin: 0;
@@ -211,8 +207,8 @@ body {
         
     }
     .homeContainer{
-       margin: 50px;
-       padding: 50px;
+       margin: 0.6em;
+       padding: 1.875em;
        flex-direction: column;
        display: flex;
 
@@ -227,40 +223,41 @@ body {
         position: relative;
         background-repeat: no-repeat;
         margin: auto;
-        padding: 150px;
+        padding: 9.3em;
 
     }
 
     .titulo {
-        font-size: 4rem;
+        font-size: 4em;
         font-family: 'Rasa', serif;
         display: flex;
         justify-content: center;
         align-items:center;
-        margin-top: 15px;
+        margin-top: 0.9em;
+        color: white;
     }
     
     .subtitulo {
         font-family: 'Rasa', serif;
-        font-size: 2rem;
+        font-size: 2em;
         display: flex;
         justify-content: center;
         align-items:center;
         text-align: center;
+        color: white;
     }
      body {
-        background-color: rgb(251, 250, 205);
-        color: rgb(144, 94, 150);
+        min-height: 100vh;
+        width: 100%;
+        /* color: rgb(144, 94, 150); */
+        background-image: linear-gradient(to bottom, #880e4f, #8b275f, #8d396e, #8e497c, #8f5788, #8a5a87, #855d86, #805f84, #735877, #675169, #5b4a5d, #4f4350);
     } 
     .headerPost{
         font-family: 'Rasa', serif;
-        font-size: 25px;
+        font-size: 1.563em;
         text-align: center;
         margin-top: 4%;
         padding: 1%;
-
-
-
     }
     .botones {
         /* background: rgb(222, 186, 206); */
@@ -268,17 +265,16 @@ body {
         display: flex;
         justify-content: center;
         align-items: center;
-        width: 11rem;
-        height: 3rem;
-        border-radius: 10px;
+        width: 11em;
+        height: 3em;
+        border-radius: 0.625em;
         /*border: 1%;*/
-        margin: 30px;
+        margin: 3em;
         margin-left: 25%;
         font-family: 'Anton', sans-serif;
         color: white;
-        font-size: 1rem;
+        font-size: 1em;
         /* font-weight: bold; */
-    
     }
     
     .inputs {
@@ -286,15 +282,15 @@ body {
         display: flex;
         justify-content: center;
         align-items: center;
-        width: 12rem;
-        height: 2rem;
-        border-radius: 10px;
+        width: 12em;
+        height: 2em;
+        border-radius: 1em;
         border: none;
-        margin: 25px;
+        margin: 2.5em;
         margin-left: 18%;
         font-family: 'Anton', sans-serif;
         color: rgb(81, 36, 86);
-        font-size: 1rem;
+        font-size: 1em;
     }
     
     #btnlogInGoogle {
@@ -308,12 +304,12 @@ body {
         font-family: Arial, Helvetica, sans-serif;
 
         color: #602a92;
-        border: 4px solid rgb(119, 53, 89);;
-        border-radius: 10px;
-        padding: 10px 25px;
+        border: 0.5em solid rgb(119, 53, 89);;
+        border-radius: 1em;
+        padding: 1em 2.5em;
         background: transparent;
-        max-width: 300px;
-        height: 40px;
+        max-width: 30em;
+        height: 4em;
     }
     
     .hide {
@@ -323,12 +319,12 @@ body {
     .googleIcon{
         background-image: url("img/boton_goo.PNG");
         background-position:center;
-        width: 15rem;
-        height: 3rem;
-        border-radius: 10px;
+        width: 15em;
+        height: 3em;
+        border-radius: 1em;
         justify-content: center;
         align-items: center;
-        margin: 25px;
+        margin: 2.5em;
         margin-left: 18%;
         background-size: cover;
         
@@ -340,7 +336,7 @@ body {
         justify-content: center;
         align-items: column;
         flex-direction: column;
-        margin: 0.5rem 0.1rem 0.5rem;
+        margin: 0.5em 0.1em 0.5em;
     } */
     
     .postIndividual{
@@ -348,11 +344,11 @@ body {
         text-align: center;
         justify-content: space-between;
         width: 80%;
-        height: 10rem;
-        margin: 2rem auto 2rem;
-        border: 3px solid rgb(119, 53, 89);
-        box-shadow: 15px 15px 30px #d2c2d3;
-        border-radius: 40px 0 40px 0;
+        height: 10em;
+        margin: 2em auto 2em;
+        border: 0.18em solid rgb(119, 53, 89);
+        box-shadow: 0.9em 0.9em 1.875em #d2c2d3;
+        border-radius: 2.5em 0 2.5em 0;
         padding: 2%;
     }
     .postHeader{
@@ -369,22 +365,22 @@ body {
         display: flex;
         justify-content: center;
         align-self: flex-start;
-        margin: 0.2rem;
+        margin: 0.2em;
     }
     
     .postTitle {
         font-family: 'Rasa', serif;
-        font-size: 20px;
+        font-size: 1.25em;
         display: flex;
         justify-content: center;
         align-self: center;
         flex-direction: column;
         text-align: center;
         color: rgb(60, 23, 65);
-        border: 3px solid rgb(119, 53, 89);
-        border-radius: 40px 40px 0 0 ;
+        border: 0.18em solid rgb(119, 53, 89);
+        border-radius: 2.5em 2.5em 0 0 ;
         width: 80%;
-        height: 2rem;
+        height: 2em;
     }
     }
 
@@ -397,16 +393,16 @@ body {
     }
     .postText {
         font-family: 'Rasa', serif;
-        font-size: 20px;
+        font-size: 1.25em;
         display: flex;
         justify-content: center;
         align-self: center;
         flex-direction: column;
         text-align: center;
         width: 80%;
-        height: 5rem;
-        border: 3px solid rgb(119, 53, 89);
-        color: black;
+        height: 5em;
+        border: 0.18em solid rgb(119, 53, 89);
+        color: white;
         
     }
     .botonGuardar {
@@ -417,52 +413,51 @@ body {
         color: white;
         cursor: pointer;
         border: none;
-        font-size: 1.2rem;
-        padding: 10px 15px;
-        border-radius: .25rem;
+        font-size: 1.2em;
+        padding: 0.62em 0.93em;
+        border-radius: 0.25em;
         width: 80%;
-        border-radius: 0 0 40px 40px;
+        border-radius: 0 0 2.5em 2.5em;
     }
     .botonGuardar:hover {
-        transform: translateY(-3px);
-        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+        transform: translateY(-0.18em);
+        box-shadow: 0 0.5em 1.25em rgba(0, 0, 0, 0.5);
         background-color: rgb(60, 23, 65);
     }
     .botonGuardar:active {
-        transform: translateY(4px) translateX(4px);
-        box-shadow: #094c66 0px 0px 0px;
+        transform: translateY(0.25em) translateX(0.25em);
+        box-shadow: #094c66 0;
       }
     .postTitle2{
         color: rgb(0, 0, 0);
         font-family: 'Rasa', serif;
-        font-size: 25px;    
+        font-size: 1.56em;    
         text-align: center;
     }
     .description-text{
         color: black;
         font-family: 'Rasa', serif;
-        font-size: 20px;
+        font-size: 1.25em;
         text-align: center;
     }
 
 .deletebtn{
     background-image: url("img/trash-regular-24.png");
-    width: 20px;
-    height: 20px;
+    width: 1.25em;
+    height: 1.25em;
     justify-content: center;
     background-position:center;
     align-items: center;
     background-size: cover;
 }
 
-/*tabletas (768px), */
 
-/**********************************************Código del FEED***********************************************/
+/* --------------------------Código del FEED---------------------------------*/
 .divPadre {
-    border: 1rem;
+    border: 1em;
     border-color: black;
 }
 #inputPost {
-    border: 1rem;
+    border: 1em;
     border-color: black;
 }
