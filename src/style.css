@@ -7,10 +7,12 @@
         box-sizing: border-box;
     }
 body {
+    min-height: 100vh;
+    width: 100%;
     display: flex;
     justify-content: center;
-    background-color: rgb(251, 250, 205); 
-    color: rgb(144, 94, 150);
+    /* color: rgb(144, 94, 150); */
+    background-image: linear-gradient(to bottom, #880e4f, #8b275f, #8d396e, #8e497c, #8f5788, #8a5a87, #855d86, #805f84, #735877, #675169, #5b4a5d, #4f4350);
 }
 
 .titulo {
@@ -232,6 +234,7 @@ body {
         justify-content: center;
         align-items:center;
         margin-top: 0.9em;
+        color: white;
     }
     
     .subtitulo {
@@ -241,10 +244,13 @@ body {
         justify-content: center;
         align-items:center;
         text-align: center;
+        color: white;
     }
      body {
-        background-color: rgb(251, 250, 205);
-        color: rgb(144, 94, 150);
+        min-height: 100vh;
+        width: 100%;
+        /* color: rgb(144, 94, 150); */
+        background-image: linear-gradient(to bottom, #880e4f, #8b275f, #8d396e, #8e497c, #8f5788, #8a5a87, #855d86, #805f84, #735877, #675169, #5b4a5d, #4f4350);
     } 
     .headerPost{
         font-family: 'Rasa', serif;
@@ -252,9 +258,6 @@ body {
         text-align: center;
         margin-top: 4%;
         padding: 1%;
-
-
-
     }
     .botones {
         /* background: rgb(222, 186, 206); */
@@ -399,7 +402,7 @@ body {
         width: 80%;
         height: 5em;
         border: 0.18em solid rgb(119, 53, 89);
-        color: black;
+        color: white;
         
     }
     .botonGuardar {
