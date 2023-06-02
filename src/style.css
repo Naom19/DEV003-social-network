@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Rasa:wght@300&display=swap');
 
-@media (max-width:600px) {
+@media (max-width:37.500em) {
     * {
         padding: 0;
         margin: 0;
@@ -42,7 +42,7 @@ body {
     align-items: center;
     width: 12rem;
     height: 2rem;
-    border-radius: 10px;
+    border-radius: 0.62em;
     border: none;
     margin: 1rem 3rem 1rem;
     font-family: 'Anton', sans-serif;
@@ -57,7 +57,7 @@ body {
     align-items: center;
     width: 12rem;
     height: 3rem;
-    border-radius: 10px;
+    border-radius: 0.62em;
     margin: 1rem 3rem 2rem;
     font-family: 'Anton', sans-serif;
     color: white;
@@ -97,7 +97,7 @@ body {
     background-size: contain;
     width: 15rem;
     height: 3rem;
-    border-radius: 10px;
+    border-radius: 0.62em;
     justify-content: center;
     align-self: center;
     margin: 0rem 2rem 1rem;
@@ -185,7 +185,7 @@ body {
     }
 
 }
-@media (max-width: 1600px) and (min-width: 601px){
+@media (max-width: 100em) and (min-width: 37.563em){
     * {
         padding: 0;
         margin: 0;
@@ -205,8 +205,8 @@ body {
         
     }
     .homeContainer{
-       margin: 10px;
-       padding: 25px;
+       margin: 0.6em;
+       padding: 1.875em;
        flex-direction: column;
        display: flex;
 
@@ -221,7 +221,7 @@ body {
         position: relative;
         background-repeat: no-repeat;
         margin: auto;
-        padding: 150px;
+        padding: 9.3em;
 
     }
 
@@ -231,7 +231,7 @@ body {
         display: flex;
         justify-content: center;
         align-items:center;
-        margin-top: 15px;
+        margin-top: 0.9em;
     }
     
     .subtitulo {
@@ -248,7 +248,7 @@ body {
     } 
     .headerPost{
         font-family: 'Rasa', serif;
-        font-size: 25px;
+        font-size: 1.563em;
         text-align: center;
         margin-top: 4%;
         padding: 1%;
@@ -264,15 +264,14 @@ body {
         align-items: center;
         width: 11rem;
         height: 3rem;
-        border-radius: 10px;
+        border-radius: 0.625em;
         /*border: 1%;*/
-        margin: 30px;
+        margin: 3em;
         margin-left: 25%;
         font-family: 'Anton', sans-serif;
         color: white;
         font-size: 1rem;
         /* font-weight: bold; */
-    
     }
     
     .inputs {
@@ -282,9 +281,9 @@ body {
         align-items: center;
         width: 12rem;
         height: 2rem;
-        border-radius: 10px;
+        border-radius: 1em;
         border: none;
-        margin: 25px;
+        margin: 2.5em;
         margin-left: 18%;
         font-family: 'Anton', sans-serif;
         color: rgb(81, 36, 86);
@@ -302,12 +301,12 @@ body {
         font-family: Arial, Helvetica, sans-serif;
 
         color: #602a92;
-        border: 4px solid rgb(119, 53, 89);;
-        border-radius: 10px;
-        padding: 10px 25px;
+        border: 0.5em solid rgb(119, 53, 89);;
+        border-radius: 1em;
+        padding: 1em 2.5em;
         background: transparent;
-        max-width: 300px;
-        height: 40px;
+        max-width: 30em;
+        height: 4em;
     }
     
     .hide {
@@ -319,10 +318,10 @@ body {
         background-position:center;
         width: 15rem;
         height: 3rem;
-        border-radius: 10px;
+        border-radius: 1em;
         justify-content: center;
         align-items: center;
-        margin: 25px;
+        margin: 2.5em;
         margin-left: 18%;
         background-size: cover;
         
@@ -344,9 +343,9 @@ body {
         width: 80%;
         height: 10rem;
         margin: 2rem auto 2rem;
-        border: 3px solid rgb(119, 53, 89);
-        box-shadow: 15px 15px 30px #d2c2d3;
-        border-radius: 40px 0 40px 0;
+        border: 0.18em solid rgb(119, 53, 89);
+        box-shadow: 0.9em 0.9em 1.875em #d2c2d3;
+        border-radius: 2.5em 0 2.5em 0;
         padding: 2%;
     }
     .postHeader{
@@ -368,15 +367,15 @@ body {
     
     .postTitle {
         font-family: 'Rasa', serif;
-        font-size: 20px;
+        font-size: 1.25em;
         display: flex;
         justify-content: center;
         align-self: center;
         flex-direction: column;
         text-align: center;
         color: rgb(60, 23, 65);
-        border: 3px solid rgb(119, 53, 89);
-        border-radius: 40px 40px 0 0 ;
+        border: 0.18em solid rgb(119, 53, 89);
+        border-radius: 2.5em 2.5em 0 0 ;
         width: 80%;
         height: 2rem;
     }
@@ -391,7 +390,7 @@ body {
     }
     .postText {
         font-family: 'Rasa', serif;
-        font-size: 20px;
+        font-size: 1.25em;
         display: flex;
         justify-content: center;
         align-self: center;
@@ -399,7 +398,7 @@ body {
         text-align: center;
         width: 80%;
         height: 5rem;
-        border: 3px solid rgb(119, 53, 89);
+        border: 0.18em solid rgb(119, 53, 89);
         color: black;
         
     }
@@ -412,37 +411,37 @@ body {
         cursor: pointer;
         border: none;
         font-size: 1.2rem;
-        padding: 10px 15px;
+        padding: 0.62em 0.93em;
         border-radius: .25rem;
         width: 80%;
-        border-radius: 0 0 40px 40px;
+        border-radius: 0 0 2.5em 2.5em;
     }
     .botonGuardar:hover {
-        transform: translateY(-3px);
-        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+        transform: translateY(-0.18em);
+        box-shadow: 0 0.5em 1.25em rgba(0, 0, 0, 0.5);
         background-color: rgb(60, 23, 65);
     }
     .botonGuardar:active {
-        transform: translateY(4px) translateX(4px);
-        box-shadow: #094c66 0px 0px 0px;
+        transform: translateY(0.25em) translateX(0.25em);
+        box-shadow: #094c66 0;
       }
     .postTitle2{
         color: rgb(0, 0, 0);
         font-family: 'Rasa', serif;
-        font-size: 25px;    
+        font-size: 1.56em;    
         text-align: center;
     }
     .description-text{
         color: black;
         font-family: 'Rasa', serif;
-        font-size: 20px;
+        font-size: 1.25em;
         text-align: center;
     }
 
 .deletebtn{
     background-image: url("img/trash-regular-24.png");
-    width: 20px;
-    height: 20px;
+    width: 1.25em;
+    height: 1.25em;
     justify-content: center;
     background-position:center;
     align-items: center;
