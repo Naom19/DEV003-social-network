@@ -14,54 +14,54 @@ body {
 }
 
 .titulo {
-    font-size: 3.4rem;
+    font-size: 3.4em;
     font-family: 'Rasa', serif;
     justify-content: center;
     align-self: center;
-    margin-top: 2rem;
+    margin-top: 2em;
 }
 
 .subtitulo {
     font-family: 'Rasa', serif;
-    font-size: 1.3rem;
+    font-size: 1.3em;
     justify-content: center;
     align-self: center;
     text-align: center;
-    margin-bottom: 2rem;
+    margin-bottom: 2em;
 }
 
 .logInContainer {
     background-color: white;
-    height: 10rem;
-    width: 5rem;
+    height: 10em;
+    width: 5em;
 }
 
 .inputs {
     background: rgb(253, 253, 253);
     justify-content: center;
     align-items: center;
-    width: 12rem;
-    height: 2rem;
+    width: 12em;
+    height: 2em;
     border-radius: 0.62em;
     border: none;
-    margin: 1rem 3rem 1rem;
+    margin: 1em 3em 1em;
     font-family: 'Anton', sans-serif;
     text-align: center;
     color: rgb(81, 36, 86);
-    font-size: 1rem;
+    font-size: 1em;
 }
 
 .botones {
     background: rgb(81, 36, 86);
     justify-content: center;
     align-items: center;
-    width: 12rem;
-    height: 3rem;
+    width: 12em;
+    height: 3em;
     border-radius: 0.62em;
-    margin: 1rem 3rem 2rem;
+    margin: 1em 3em 2em;
     font-family: 'Anton', sans-serif;
     color: white;
-    font-size: 1rem;
+    font-size: 1em;
 
 }
 
@@ -74,11 +74,11 @@ body {
 .errors {
     /*estilo*/
     font-family: Arial, Helvetica, sans-serif;
-    size: 1rem;
+    size: 1em;
     color: red;
     justify-content: center;
     align-self: center;
-    margin: 0rem 4rem 0.5rem;
+    margin: 0em 4em 0.5em;
 }
 
 .hide {
@@ -95,19 +95,19 @@ body {
     background-position:center;
     /* mismo formato que botones del home*/
     background-size: contain;
-    width: 15rem;
-    height: 3rem;
+    width: 15em;
+    height: 3em;
     border-radius: 0.62em;
     justify-content: center;
     align-self: center;
-    margin: 0rem 2rem 1rem;
+    margin: 0em 2em 1em;
 }
      /* estilo del feed */    
      /* #feedContainer {
         justify-content: center;
         align-items: column;
         flex-direction: column;
-        margin: 0.5rem 0.1rem 0.5rem;
+        margin: 0.5em 0.1em 0.5em;
     } */
 
     .postIndividual{
@@ -116,8 +116,8 @@ body {
         flex-direction: column;
         background-color: white;
         align-items: center;
-        margin: 1rem;
-        padding: 1rem;
+        margin: 1em;
+        padding: 1em;
     }
 
     .postHeader{
@@ -150,7 +150,7 @@ body {
         display: flex;
         justify-content: center;
         align-self: flex-start;
-        margin: 0.2rem;
+        margin: 0.2em;
     }
     
     #postTitle {
@@ -159,7 +159,7 @@ body {
         align-self: center;
         flex-direction: column;
         text-align: center;
-        margin: 1rem;
+        margin: 1em;
     }
 
     #taskForm {
@@ -167,7 +167,7 @@ body {
         justify-content: center;
         align-self: center;
         flex-direction: column;
-        margin: 1rem;
+        margin: 1em;
     }
     #postText {
         display: flex;
@@ -175,13 +175,13 @@ body {
         align-self: center;
         flex-direction: column;
         text-align: center;
-        margin: 0.2rem;
+        margin: 0.2em;
     }
     #botonGuardar {
         display: flex;
         justify-content: center;
         align-self: center;
-        margin: 0.2rem;
+        margin: 0.2em;
     }
 
 }
@@ -226,7 +226,7 @@ body {
     }
 
     .titulo {
-        font-size: 4rem;
+        font-size: 4em;
         font-family: 'Rasa', serif;
         display: flex;
         justify-content: center;
@@ -236,7 +236,7 @@ body {
     
     .subtitulo {
         font-family: 'Rasa', serif;
-        font-size: 2rem;
+        font-size: 2em;
         display: flex;
         justify-content: center;
         align-items:center;
@@ -262,15 +262,15 @@ body {
         display: flex;
         justify-content: center;
         align-items: center;
-        width: 11rem;
-        height: 3rem;
+        width: 11em;
+        height: 3em;
         border-radius: 0.625em;
         /*border: 1%;*/
         margin: 3em;
         margin-left: 25%;
         font-family: 'Anton', sans-serif;
         color: white;
-        font-size: 1rem;
+        font-size: 1em;
         /* font-weight: bold; */
     }
     
@@ -279,15 +279,15 @@ body {
         display: flex;
         justify-content: center;
         align-items: center;
-        width: 12rem;
-        height: 2rem;
+        width: 12em;
+        height: 2em;
         border-radius: 1em;
         border: none;
         margin: 2.5em;
         margin-left: 18%;
         font-family: 'Anton', sans-serif;
         color: rgb(81, 36, 86);
-        font-size: 1rem;
+        font-size: 1em;
     }
     
     #btnlogInGoogle {
@@ -316,8 +316,8 @@ body {
     .googleIcon{
         background-image: url("img/boton_goo.PNG");
         background-position:center;
-        width: 15rem;
-        height: 3rem;
+        width: 15em;
+        height: 3em;
         border-radius: 1em;
         justify-content: center;
         align-items: center;
@@ -333,7 +333,7 @@ body {
         justify-content: center;
         align-items: column;
         flex-direction: column;
-        margin: 0.5rem 0.1rem 0.5rem;
+        margin: 0.5em 0.1em 0.5em;
     } */
     
     .postIndividual{
@@ -341,8 +341,8 @@ body {
         text-align: center;
         justify-content: space-between;
         width: 80%;
-        height: 10rem;
-        margin: 2rem auto 2rem;
+        height: 10em;
+        margin: 2em auto 2em;
         border: 0.18em solid rgb(119, 53, 89);
         box-shadow: 0.9em 0.9em 1.875em #d2c2d3;
         border-radius: 2.5em 0 2.5em 0;
@@ -362,7 +362,7 @@ body {
         display: flex;
         justify-content: center;
         align-self: flex-start;
-        margin: 0.2rem;
+        margin: 0.2em;
     }
     
     .postTitle {
@@ -377,7 +377,7 @@ body {
         border: 0.18em solid rgb(119, 53, 89);
         border-radius: 2.5em 2.5em 0 0 ;
         width: 80%;
-        height: 2rem;
+        height: 2em;
     }
     }
 
@@ -397,7 +397,7 @@ body {
         flex-direction: column;
         text-align: center;
         width: 80%;
-        height: 5rem;
+        height: 5em;
         border: 0.18em solid rgb(119, 53, 89);
         color: black;
         
@@ -410,9 +410,9 @@ body {
         color: white;
         cursor: pointer;
         border: none;
-        font-size: 1.2rem;
+        font-size: 1.2em;
         padding: 0.62em 0.93em;
-        border-radius: .25rem;
+        border-radius: 0.25em;
         width: 80%;
         border-radius: 0 0 2.5em 2.5em;
     }
@@ -451,10 +451,10 @@ body {
 
 /* --------------------------Código del FEED---------------------------------*/
 .divPadre {
-    border: 1rem;
+    border: 1em;
     border-color: black;
 }
 #inputPost {
-    border: 1rem;
+    border: 1em;
     border-color: black;
 }
